@@ -1,0 +1,18 @@
+[package]
+name = "webgl-wgsl-loader"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+naga = { version = "0.19.0", features = ["wgsl-in", "glsl-out"] }
+napi = { version = "2", features = ["async", "serde-json"] }
+napi-derive = "2"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+
+[build-dependencies]
+napi-build = "2.1.2"

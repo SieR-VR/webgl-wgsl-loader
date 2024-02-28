@@ -1,0 +1,16 @@
+{
+  "name": "webgl-wgsl-loader",
+  "version": "1.0.0",
+  "description": "WGSL loader for WebGL2 with naga",
+  "main": "index.js",
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/cli": "^2.18.0"
+  }
+}
